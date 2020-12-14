@@ -1,13 +1,19 @@
 package com.rainforest.robot.models;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 
 @Data
+@AllArgsConstructor
+@RequiredArgsConstructor
 public class Robot {
-  private Position position;
-  private STATUS status;
+  @NonNull private Position position;
+  @NonNull private STATUS status;
+  private Integer bearCount = 0;
 
-  enum STATUS {
+  public enum STATUS {
     FUNCTIONING, SHORT_CIRCUITED
   }
 }

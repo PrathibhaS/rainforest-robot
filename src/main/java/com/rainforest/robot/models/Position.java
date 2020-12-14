@@ -1,8 +1,10 @@
 package com.rainforest.robot.models;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
+@AllArgsConstructor
 public class Position {
-  int x, y;
+  Integer x, y;
 }

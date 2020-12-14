@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "36f0d794-4d6d-453b-8cc7-474a09f2ba96",
+		"name": "Robot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Rainforest Robot Instructions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"feeder\": \"1 1\",\n\"robot\": \"0 1\",\n\"crates\": \"0 0 5\",\n\"instructions\": \"SPPNED\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

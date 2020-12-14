@@ -1,14 +1,13 @@
 package com.rainforest.robot.models.dtos;
 
-import com.rainforest.robot.models.Crate;
-import com.rainforest.robot.models.Feeder;
-import com.rainforest.robot.models.Robot;
+import lombok.Builder;
+import lombok.Data;
 
-import java.util.List;
-
-public class InputDTO {//todo needs change
-  private Feeder feeder;
-  private Robot robot;
-  private List<Crate> crates;
+@Data
+@Builder
+public class InputDTO {
+  private String feeder;
+  private String robot;
+  private String crates;
   private String instructions;
 }
